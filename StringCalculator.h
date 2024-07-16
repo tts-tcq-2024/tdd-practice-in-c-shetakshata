@@ -12,3 +12,19 @@ int LessThanThousand(const char *num) {
     }
     return 0;
 }
+//sum of the inputs
+int sum(const char *ch)
+{
+    int cnt =0;
+    int total = 0;
+    int num_arr[100] = {0};
+    while(ch[cnt] != '\0')
+    {
+       strtonum(ch,num_arr,&cnt);
+    }
+
+    total = add_arr(num_arr,cnt);
+
+    return total;
+}
+
