@@ -22,7 +22,7 @@ int calculatesum(const char* input, const char* delimiter) {
     char* duplicate_input = strdup(input); // Duplicate the input string
     char* token = strtok(duplicate_input, delimiter); // Tokenize input string
     while (token != NULL) {
-        sum += lessthanthousand(token); // Add valid numbers less than 1000 to sum
+        sum += LessthanThousand(token); // Add valid numbers less than 1000 to sum
         token = strtok(NULL, delimiter);
     }
     free(duplicate_input); // Free allocated memory
